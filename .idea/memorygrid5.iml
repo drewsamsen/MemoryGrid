@@ -18,6 +18,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="mysql" version="2.8.1" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="mysql" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="config/database.yml" />
@@ -26,6 +32,7 @@
       <requirement>
         <dependency name="rails" version="2.3.8" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
+      <source from="Gemfile" />
       <source from="config/environment.rb" />
     </requirement>
     <requirement>
@@ -51,9 +58,9 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v2.3.8, C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.8)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v2.3.8, C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.8)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v2.3.8, C:/Ruby187/lib/ruby/gems/1.8/gems/activeresource-2.3.8)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.1.0, C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mysql (v2.8.1, C:/Ruby187/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mingw32)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] json_pure (v1.4.6, C:/Ruby187/lib/ruby/gems/1.8/gems/json_pure-1.4.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.7, C:/Ruby187/lib/ruby/gems/1.8/gems/bundler-1.0.7)" level="application" />
   </component>
 </module>
 

@@ -1,0 +1,5 @@
+page.insert_html :bottom, :comments, :partial => 'comment', :object => [@memory.comment]
+page.replace_html :comment_counter, 180
+page[:comment_form].reset
+page.replace_html :notice, flash[:notice]
+flash.discard

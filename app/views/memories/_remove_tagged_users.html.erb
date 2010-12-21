@@ -1,0 +1,9 @@
+<ul>
+		<% @memory.users.each do |user| %>
+		<% unless @memory.user_is_owner?(user) %>
+		<li>
+			<%= user.name %><u><%= link_to_remote "Remove",:update => 'tagged_users',:update => 'tagged_users',:url => {:controller => 'memories',:action => 'remove_tagged_users',:id => @memory.id,:user_id => user.id}%></u>
+		</li>
+		<% end %>
+		<% end %>
+	</ul>

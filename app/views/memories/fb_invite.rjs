@@ -1,0 +1,4 @@
+page.replace_html("invite", :partial => "invite", :object => @memory)
+
+page[:invite].visual_effect :blind_down
+

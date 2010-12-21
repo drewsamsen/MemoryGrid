@@ -1,0 +1,14 @@
+<div class="user">
+<% fields_for "memory[usr_attributes][]", user do |usr_form| %>
+  <% if user.id.blank? %>
+    <a href="javascript:void(0)" onclick="this.up('.user').remove(); return false;" class="remove_friend"><span>(x)</span></a>
+	<p>
+		<%= usr_form.label :name %>
+		<%= usr_form.text_field_with_auto_complete :name, { :size => 25}, { :url => {:controller => :users,:action => :index,:friends => friends},
+:method => :get, :with => "'search=' + element.value" } %>
+
+		
+	</p>
+	<% end %>
+<% end %>
+</div>

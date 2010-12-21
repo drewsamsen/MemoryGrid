@@ -1,0 +1,19 @@
+<h2>hi.</h2>
+<fb:serverfbml>
+<script type="text/fbml">
+<% content_for("invite_user") do %>
+   Check out my new memory "<%= link_to @memory.title,"#{SITE_URL}/memories/#{@memory.id}" %>" in Memorygrid.  Lots of good stuff in
+there!
+<% end %>
+
+<% fb_request_form("Facebooker Application","invite_user", "#{SITE_URL}/memories/show/#{@memory.id.to_s}") do %>
+   <fb:multi-friend-selector
+		actiontext="Invite your friends to check out your memory."
+		exclude_ids="<%= @exclude_users %>"
+        rows=2
+        cols=2 />
+
+<% end %>
+
+</script>
+</fb:serverfbml>

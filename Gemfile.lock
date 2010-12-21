@@ -11,6 +11,9 @@ GEM
     activeresource (2.3.8)
       activesupport (= 2.3.8)
     activesupport (2.3.8)
+    facebooker (1.0.75)
+      json_pure (>= 1.0.0)
+    json_pure (1.4.6)
     mysql (2.8.1-x86-mingw32)
     rack (1.1.0)
     rails (2.3.8)
@@ -26,5 +29,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  facebooker
   mysql (= 2.8.1)
   rails (= 2.3.8)

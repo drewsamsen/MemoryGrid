@@ -7,7 +7,7 @@ class MemoriesController < ApplicationController
   before_filter :set_params,:only => [:create,:update]
   
   auto_complete_for :memory, :title
-  auto_complete_for :user, :name
+  
 
   def index
     @memories = current_user.memories.find(:all, :order => 'updated_at desc')
@@ -66,7 +66,7 @@ class MemoriesController < ApplicationController
     @friends.each do |f|
       @friends_names << f.name
     end
-    render :partial => 'memories/set_friends'
+    render :json => @friends_names
   end
   
   def set_friends_edit
@@ -151,9 +151,10 @@ private
      @friends = friends
     params[:memory][:usr_attributes].each do |a|
       @friends.each do |fr|
-        a["uid"] = fr.uid.to_i if fr.name == a["name"]
+        a[1]["uid"] = fr.uid.to_i if fr.name == a[1]["name"]
       end
     end
+     p "______________________#{params[:memory][:usr_attributes]}"
     end
  end
 

@@ -7,10 +7,20 @@
             url: 'set_friends',
             type: "POST",
 			success: function(data){
-               $('set_friends').innerHTML = data; 
-				
+               var friends = data; 
+				jQuery("body").delegate("input:text", "keyup", function(){
+					new Autocompleter.Local(this.id, this.id + '_auto_complete',friends);
+
+                });
             }
         });
+        jQuery('#new_memory').bind('submit',function() {
+              jQuery('#page').css('opacity','0.30');
+	      jQuery('#loading').css('display','block');
+              return true;
+           });
+		
+
 		});
 </script>
 
@@ -43,7 +53,7 @@
   <div id="set_friends">
     <div id="users"><%= render :partial => 'user', :collection => @memory.users %></div>
   
-  <%= add_user_link "Tag Users",@friends %>
+  <%= add_user_link "Tag Users" %>
 
   </div>
 

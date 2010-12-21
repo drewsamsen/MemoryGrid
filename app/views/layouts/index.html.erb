@@ -11,7 +11,7 @@
     </head>
     <body>
 
-    <div id="loading">Loading...</div>
+    <div id="loading">Saving</div>
 
     <div id="page"><!-- entire page - to dim when loading overlay -->
 
@@ -30,7 +30,7 @@
     </div><!-- #notice -->
 
     <%= fb_connect_javascript_tag %>
-    <%= init_fb_connect "XFBML"%>
+    <%= init_fb_connect "XFBML", {:js => :jquery , :app_settings => " { permsToRequestOnConnect : 'email' }"}%>
 
     <%=yield%>
 

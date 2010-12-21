@@ -12,7 +12,7 @@ class Memory < ActiveRecord::Base
   
   def usr_attributes=(usr_attributes)
     usr_attributes.each do |attributes|
-      new_facebooker = User.find_or_create_by_fb_user_id(attributes["uid"].to_i,{:name => attributes["name"].strip, :login => "facebooker_#{attributes["uid"].to_i}", :password => "", :email => ""})
+      new_facebooker = User.find_or_create_by_fb_user_id(attributes[1]["uid"].to_i,{:name => attributes[1]["name"].strip, :login => "facebooker_#{attributes[1]["uid"].to_i}", :password => "", :email => ""})
       new_facebooker.save(false)
       tag = Tag.create(:user => new_facebooker,:memory => self)
     end 

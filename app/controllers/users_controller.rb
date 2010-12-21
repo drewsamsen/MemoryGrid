@@ -55,6 +55,9 @@ class UsersController < ApplicationController
   #@friends = facebook_session.user.friends!(:name)
   @user = current_user
   @user.last_logged_in = Time.now
+  if @user.email.blank?
+    @user.email = facebook_session.user.email
+  end
   @user.save(false)
   session[:facebook_session] = facebook_session
   redirect_to :controller => :memories,:action => :index

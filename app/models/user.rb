@@ -88,7 +88,7 @@ end
 #We don't get the email from Facebook and because a facebooker can only login through Connect we just generate a unique login name for them.
 #If you were using username to display to people you might want to get them to select one after registering through Facebook Connect
 def self.create_from_fb_connect(fb_user)
-  new_facebooker = User.new(:name => fb_user.name, :login => "facebooker_#{fb_user.uid}", :password => "", :email => "")
+  new_facebooker = User.new(:name => fb_user.name, :login => "facebooker_#{fb_user.uid}", :password => "",:email => fb_user.email)
   new_facebooker.fb_user_id = fb_user.uid.to_i
   #We need to save without validations
   new_facebooker.save(false)

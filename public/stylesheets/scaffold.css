@@ -176,7 +176,7 @@ body {
     padding: 0 5px;
     position: relative;
     text-align: center;
-    top: 16px;
+    top: 7px;
     vertical-align: top;
 	float:right;
 	margin:0;
@@ -191,7 +191,7 @@ body {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	background:url(../images/ajax-loader.gif) no-repeat center #fff;
+	background:url(../images/ajax-loader.gif) no-repeat center 40px #fff;
 	text-align:center;
 	padding:10px;
 	font:normal 16px Tahoma, Geneva, sans-serif;
@@ -355,7 +355,6 @@ p.comment-content {
 	background:url(../images/icon-add.png) no-repeat 0 1px;
 	padding:0 0 2px 20px;
 	display:block;
-	clear:both;
 	outline:none;
 }
 a.remove_friend span {
@@ -378,7 +377,7 @@ a.remove_friend {
 	overflow:hidden;
 }
 #set_friends {
-	margin:0 0 12px 0;
+	margin:8px 0 12px 0;
 }
 p.commenter-name a {
 	color:#999 !important;
@@ -414,3 +413,6 @@ p.commenter-name a:hover {
 	#memory-users li form {
 		display:none;
 	}
+.user input {
+	width:185px;
+}

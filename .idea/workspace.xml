@@ -193,20 +193,7 @@
       <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\test_helper.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\restful_authentication" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/memories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/memories_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/memories_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/memories_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/memory.rb" afterPath="$PROJECT_DIR$/app/models/memory.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memories/_set_friends.html.erb" afterPath="$PROJECT_DIR$/app/views/memories/_set_friends.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memories/_user.html.erb" afterPath="$PROJECT_DIR$/app/views/memories/_user.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memories/add_user_script.rjs" afterPath="$PROJECT_DIR$/app/views/memories/add_user_script.rjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/memories/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memories/new.html.erb" afterPath="$PROJECT_DIR$/app/views/memories/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/jquery.autocomplete.css" afterPath="$PROJECT_DIR$/public/stylesheets/jquery.autocomplete.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scaffold.css" afterPath="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/memories/show.html.erb" />
     </list>
     <ignored path="memorygrid5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -239,19 +226,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/memories/new.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/memories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="2" selection-start="1398" selection-end="1398" vertical-scroll-proportion="-13.730769">
+            <state line="79" column="43" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.6404834">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_user.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/memories/_user.html.erb">
+      <file leaf-file-name="memory.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/memory.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="8" selection-start="487" selection-end="487" vertical-scroll-proportion="0.23111783">
+            <state line="22" column="5" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_comment.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="4" selection-start="86" selection-end="137" vertical-scroll-proportion="-1.3076923">
               <folding />
             </state>
           </provider>
@@ -260,7 +256,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="21" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-15.692307">
+            <state line="24" column="21" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -300,9 +296,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
         <option value="$PROJECT_DIR$/app/views/memories/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/memories/show.html.erb" />
         <option value="$PROJECT_DIR$/config/boot.rb" />
         <option value="$PROJECT_DIR$/config/preinitializer.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -316,6 +310,8 @@
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/memories/_user.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/memory.rb" />
+        <option value="$PROJECT_DIR$/app/views/memories/show.html.erb" />
       </list>
     </option>
   </component>
@@ -405,6 +401,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -420,20 +417,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="memorygrid5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorygrid5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorygrid5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -495,7 +478,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="comments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memorygrid5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memorygrid5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,15 +517,14 @@
         </subPane>
       </pane>
       <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="recentsLimit" value="5" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Rails.Development: memorygrid5">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -731,7 +731,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="205" y="63" width="1397" height="844" extended-state="0" />
+    <frame x="216" y="151" width="1397" height="844" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -784,16 +784,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="533" selection-end="533" vertical-scroll-proportion="0.22270742" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4970326" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/memories_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -807,11 +797,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/memories/add_user_script.rjs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/memory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/memories/_set_friends.html.erb">
@@ -829,40 +814,19 @@
         <state line="49" column="11" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.55407405" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="118" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.60444444" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../memorygrid5.4/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="11" selection-start="767" selection-end="767" vertical-scroll-proportion="0.56831396" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="21" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-15.692307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.33383685">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.33383685" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memories/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="2" selection-start="1398" selection-end="1398" vertical-scroll-proportion="-13.730769">
+        <state line="24" column="21" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -870,6 +834,46 @@
     <entry file="file://$PROJECT_DIR$/app/views/memories/_user.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="8" selection-start="487" selection-end="487" vertical-scroll-proportion="0.23111783">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/memories/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="2" selection-start="1398" selection-end="1398" vertical-scroll-proportion="0.5377644">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="4511" selection-end="4511" vertical-scroll-proportion="0.62222224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="86" selection-end="137" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/memory.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="5" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/memories/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="43" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.6404834">
           <folding />
         </state>
       </provider>

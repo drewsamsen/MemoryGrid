@@ -1,7 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a35b35ce-45cc-4287-bdf6-68bd2bc36580" name="Default" comment="" />
+    <list default="true" id="a35b35ce-45cc-4287-bdf6-68bd2bc36580" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\public\stylesheets\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\README.rdoc" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\VERSION" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\auto_complete.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\auto_complete_form_builder_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\auto_complete_macros_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\repeated_auto_complete.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\view_mapper\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\view_mapper\has_many_auto_complete_view.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\view_mapper\templates\controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\view_mapper\templates\layout.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\view_mapper\templates\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\view_mapper\templates\view_child_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\lib\view_mapper\templates\view_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\rails\init.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\repeated_auto_complete.gemspec" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\auto_complete_form_builder_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\auto_complete_nested_attributes_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\auto_complete_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\expected_templates\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\expected_templates\_person.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\expected_templates\create_parents.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\expected_templates\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\expected_templates\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\expected_templates\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\expected_templates\parent.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\expected_templates\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\expected_templates\testies_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\auto_complete\test\view_mapper\has_many_auto_complete_view_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\.autotest" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\CHANGELOG.rdoc" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\COPYING.rdoc" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\Manifest.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\README.rdoc" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\TODO.rdoc" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\examples\desktop_login.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\facebooker.gemspec" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook\facebook_generator.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook\templates\config\facebooker.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook\templates\public\javascripts\facebooker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_controller\USAGE" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_controller\facebook_controller_generator.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_controller\templates\controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_controller\templates\functional_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_controller\templates\helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_controller\templates\view.fbml.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_controller\templates\view.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_publisher\facebook_publisher_generator.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_publisher\templates\create_facebook_templates.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_publisher\templates\publisher.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\USAGE" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\facebook_scaffold_generator.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\facebook_style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\functional_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\layout.fbml.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\layout.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\view_edit.fbml.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\view_edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\view_index.fbml.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\view_index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\view_new.fbml.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\view_new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\view_show.fbml.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\facebook_scaffold\templates\view_show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\publisher\publisher_generator.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\xd_receiver\templates\xd_receiver.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\xd_receiver\templates\xd_receiver_ssl.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\generators\xd_receiver\xd_receiver_generator.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\init.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\install.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\adapters\adapter_base.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\adapters\bebo_adapter.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\adapters\facebook_adapter.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\admin.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\application.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\attachment.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\batch_request.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\data.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\feed.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\logging.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\mobile.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\mock\service.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\mock\session.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\model.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\affiliation.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\album.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\applicationproperties.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\applicationrestrictions.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\comment.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\cookie.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\education_info.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\event.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\family_relative_info.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\friend_list.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\group.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\info_item.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\info_section.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\location.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\message_thread.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\notifications.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\page.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\photo.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\tag.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\user.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\video.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\models\work_info.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\parser.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\._helpers.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\backwards_compatible_param_checks.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\cucumber.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\cucumber\world.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\extensions\action_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\extensions\action_view.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\extensions\rack_setup.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\extensions\routing.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\facebook_form_builder.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\facebook_pretty_errors.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\facebook_request_fix.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\facebook_request_fix_2-3.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\facebook_session_handling.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\facebook_url_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\facebook_url_rewriting.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\helpers.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\helpers\fb_connect.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\helpers\stream_publish.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\integration_session.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\profile_publisher_extensions.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\publisher.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\routing.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\test_helpers.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\rails\utilities.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\server_cache.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\service.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\service\base_service.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\service\curl_service.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\service\net_http_service.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\service\typhoeus_multi_service.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\service\typhoeus_service.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\session.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\stream_post.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\facebooker\version.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\net\http_multipart_post.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\rack\facebook.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\rack\facebook_session.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\tasks\facebooker.rake" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\tasks\facebooker.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\lib\tasks\tunnel.rake" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\rails\init.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\setup.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\templates\layout.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\adapters_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\admin_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\application_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\attachment_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\batch_request_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\data_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\logging_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\mobile_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\model_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\models\event_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\models\page_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\models\photo_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\models\user_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\rails\facebook_request_fix_2-3_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\rails\facebook_url_rewriting_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\rails\integration_session_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\rails\publisher_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\rails_integration_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\server_cache_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\service_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker\session_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\facebooker_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\fixtures\multipart_post_body_with_only_parameters.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\fixtures\multipart_post_body_with_single_file.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\fixtures\multipart_post_body_with_single_file_that_has_nil_key.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\net\http_multipart_post_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\rack\facebook_session_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\rack\facebook_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\rails_test_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\facebooker\test\test_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\restful_authentication" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memories/_set_friends.html.erb" afterPath="$PROJECT_DIR$/app/views/memories/_set_friends.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+    </list>
     <ignored path="memorygrid5.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,12 +219,41 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07703927">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Branch.Configurations">
+    <option name="CURRENT" value="master" />
+    <option name="CONFIGURATIONS">
+      <array>
+        <BranchConfiguration>
+          <option name="IS_AUTO_DETECTED" value="true" />
+          <option name="NAME" value="master" />
+          <option name="BRANCHES">
+            <array>
+              <BranchInfo>
+                <option name="ROOT" value="$PROJECT_DIR$" />
+                <option name="REFERENCE" value="master" />
+              </BranchInfo>
+            </array>
+          </option>
+        </BranchConfiguration>
+      </array>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="GIT_EXECUTABLE" value="C:\Program Files (x86)\Git\bin\git.exe" />
@@ -38,10 +263,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/memories/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/memory.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/comments/create.rjs" />
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
         <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
         <option value="$PROJECT_DIR$/app/views/memories/index.html.erb" />
@@ -54,6 +275,10 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/memories/_set_friends.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/../memorygrid5.4/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
       </list>
     </option>
   </component>
@@ -83,6 +308,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -137,7 +364,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="sessions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -152,48 +379,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorygrid5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorygrid5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorygrid5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorygrid5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="RailsProjectView">
         <subPane>
           <PATH>
@@ -254,7 +444,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,21 +658,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="33" width="1397" height="843" extended-state="0" />
-    <editor active="false" />
+    <frame x="162" y="18" width="1397" height="844" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34075105" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2575423" sideWeight="0.65924895" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2575423" sideWeight="0.65924895" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34075105" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24428572" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -522,114 +711,84 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/boot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="2761" selection-end="2761" vertical-scroll-proportion="0.4198813">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/preinitializer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="3" selection-start="600" selection-end="600" vertical-scroll-proportion="0.47016013">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/facebooker.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="20" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.9257642">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.7671034">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/xd_receiver_ssl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/xd_receiver.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/jquery.autocomplete.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="533" selection-end="533" vertical-scroll-proportion="0.22270742">
-          <folding />
-        </state>
+        <state line="9" column="23" selection-start="533" selection-end="533" vertical-scroll-proportion="0.22270742" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4970326">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/memory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4970326" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/memories_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/memories_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="25" selection-start="3218" selection-end="3218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memories/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="282" selection-end="282" vertical-scroll-proportion="0.25718608">
-          <folding />
-        </state>
+        <state line="132" column="25" selection-start="3218" selection-end="3218" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/memories/add_user_script.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/memory.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/memories/_set_friends.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="3" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/memories/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="308" selection-end="308" vertical-scroll-proportion="0.3081571" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="11" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.55407405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="118" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.60444444" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../memorygrid5.4/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="11" selection-start="767" selection-end="767" vertical-scroll-proportion="0.56831396" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="42" selection-start="855" selection-end="855" vertical-scroll-proportion="0.41149774">
+        <state line="17" column="19" selection-start="788" selection-end="788" vertical-scroll-proportion="0.28096676" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07703927">
           <folding />
         </state>
       </provider>

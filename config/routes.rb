@@ -46,7 +46,6 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
   map.root :controller => "memories", :action => "index"
 
-
   # See how all your routes lay out with "rake routes"
 
   # Install the default routes as the lowest priority.

@@ -36,8 +36,8 @@ test:
     server_alive_interval: 0
 
 production:
-  api_key: c701da10ca2d9674c455285ef6cd355b
-  secret_key: a5dbd77487d9b7275b8ae5d7506b2016
+  api_key: ebe9c94171646fdc8a9bd7a8917cf8c7
+  secret_key: 79eb657b479e5e97b9aee5c80d7d0cfe
   canvas_page_name: 
   callback_url: http://sharp-ice-252.heroku.com/
   set_asset_host_to_callback_url: true   

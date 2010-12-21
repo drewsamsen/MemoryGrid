@@ -115,24 +115,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorygrid5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memorygrid5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
@@ -411,7 +393,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="554" y="49" width="1020" height="848" extended-state="1" />
+    <frame x="688" y="41" width="1020" height="848" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -529,14 +511,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="134" selection-end="134" vertical-scroll-proportion="0.2014218">
+        <state line="5" column="28" selection-start="134" selection-end="134" vertical-scroll-proportion="0.12283237">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20101130200918_add_users_fb.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="15" selection-start="173" selection-end="215" vertical-scroll-proportion="0.12283237">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.42415318">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/facebooker.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="881" selection-end="881" vertical-scroll-proportion="0.47569954">
+        <state line="40" column="20" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.6244477">
           <folding />
         </state>
       </provider>

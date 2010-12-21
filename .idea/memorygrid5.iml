@@ -49,6 +49,18 @@
       <source from="vendor/plugins/facebooker/test/rails_test_helper.rb" />
       <source from="vendor/plugins/facebooker/test/test_helper.rb" />
     </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="repeated_auto_complete" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="restful_authentication" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">

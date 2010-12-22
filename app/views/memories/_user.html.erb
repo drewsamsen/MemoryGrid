@@ -4,9 +4,9 @@
     <a href="javascript:void(0)" onclick="this.up('.user').remove(); return false;" class="remove_friend"><span>(x)</span></a>
 	<p>
 		<%= usr_form.label :name %>
-		<%= usr_form.text_field :name, {:autocomplete => 'off', :size => 25}%>
+		<%= usr_form.text_field :name, {:autocomplete => 'off', :size => 40}%>
                 <div class="autocomplete" id="memory_usr_attributes_<%= u_id %>_name_auto_complete" style="display:none"></div>
-		
+		<%= hidden_field_tag "memory[usr_attributes][#{u_id}][uid]",'',{:id => "memory_usr_attributes_#{u_id}_name_fb_id"}%>
 	</p>
 	<% end %>
 <% end %>

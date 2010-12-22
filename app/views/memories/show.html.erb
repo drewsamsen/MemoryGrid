@@ -76,11 +76,13 @@
   <% end %>
   </ul>
 
-  <h4>Author Meta</h4>
-  <ul class="sidebar-list">
-    <li><%= link_to 'Edit', edit_memory_path(@memory) %></li>
-    <li><%= link_to 'Destroy', @memory, :confirm => 'Are you sure?', :method => :delete %></li>
-  </ul>
+  <% if @memory.user_is_owner?(current_user)%>
+      <h4>Author Meta</h4>
+      <ul class="sidebar-list">
+        <li><%= link_to 'Edit', edit_memory_path(@memory) %></li>
+        <li><%= link_to 'Destroy', @memory, :confirm => 'Are you sure?', :method => :delete %></li>
+      </ul>
+  <% end %>
   
 </div><!-- #users -->
 </div><!-- #sidebar -->

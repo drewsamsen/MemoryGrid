@@ -4,10 +4,10 @@ class MemoriesController < ApplicationController
   layout "index"
   before_filter :login_required
   before_filter :check_permission,:only => [:show,:edit,:update]
-  before_filter :set_params,:only => [:create,:update]
-  
+  before_filter :set_params,:only => :update
+
   auto_complete_for :memory, :title
-  
+
 
   def index
     @memories = current_user.memories.find(:all, :order => 'updated_at desc')
@@ -40,7 +40,7 @@ class MemoriesController < ApplicationController
   # GET /memories/1
   # GET /memories/1.xml
   def show
-    
+
       respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @memory }
@@ -51,24 +51,21 @@ class MemoriesController < ApplicationController
   # GET /memories/new.xml
   def new
     @memory = Memory.new
-    
-  
+
+
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @memory }
     end
   end
-  
+
   def set_friends
     @memory = Memory.new
     @friends = friends
-    @friends_names = Array.new
-    @friends.each do |f|
-      @friends_names << f.name
-    end
-    render :json => @friends_names
+
+    render :json => @friends
   end
-  
+
   def set_friends_edit
     @memory = Memory.find(params[:memory_id])
     @friends = friends
@@ -81,13 +78,13 @@ class MemoriesController < ApplicationController
 
   # GET /memories/1/edit
   def edit
-    
+
   end
 
   # POST /memories
   # POST /memories.xml
   def create
-   
+
    @memory = Memory.new(params[:memory])
 
     respond_to do |format|
@@ -106,7 +103,7 @@ class MemoriesController < ApplicationController
   # PUT /memories/1
   # PUT /memories/1.xml
   def update
-   
+
     respond_to do |format|
       if @memory.update_attributes(params[:memory])
         format.html { redirect_to(@memory, :notice => 'Memory was successfully updated.') }
@@ -129,14 +126,14 @@ class MemoriesController < ApplicationController
       format.xml  { head :ok }
     end
   end
-  
+
   def remove_tagged_users
     @memory = Memory.find(params[:id])
     @tag = Tag.find_by_user_id_and_memory_id(params[:user_id], @memory.id)
     @tag.destroy
     render :partial => 'memories/remove_tagged_users'
   end
-  
+
 private
 
  def check_permission
@@ -145,7 +142,7 @@ private
      redirect_to :controller => 'memories',:action => 'index'
    end
  end
- 
+
  def set_params
    unless params[:memory][:usr_attributes].blank?
      @friends = friends
@@ -154,7 +151,7 @@ private
         a[1]["uid"] = fr.uid.to_i if fr.name == a[1]["name"]
       end
     end
-     p "______________________#{params[:memory][:usr_attributes]}"
+
     end
  end
 

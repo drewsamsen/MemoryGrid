@@ -3,6 +3,9 @@ ActionController::Routing::Routes.draw do |map|
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
+  map.newmem '/new', :controller => 'memories', :action => 'new'
+
+
  
  map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate'
   map.resources :users, :collection => {:link_user_accounts => :get,:logout_facebook => :get}
@@ -42,9 +45,16 @@ ActionController::Routing::Routes.draw do |map|
   #     admin.resources :products
   #   end
 
+
+
+
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   # map.root :controller => "welcome"
   map.root :controller => "memories", :action => "index"
+
+  # to make /51 go to /memories/51
+  map.mempath ':id', :controller => 'memories', :action => 'show'
+
 
   # See how all your routes lay out with "rake routes"
 

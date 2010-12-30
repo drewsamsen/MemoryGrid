@@ -9,7 +9,7 @@
           <a href="#" onclick="FB.Connect.logout(function (){ document.location='/logout/'; });">Logout</a>
         </p>
 
-        <%= link_to '(+)Add New Memory', new_memory_path, :id => "add-new-mem" %>
+        <%= link_to '(+)Add New Memory', newmem_path, :id => "add-new-mem" %>
     <% else %>
         <p>why don't you connect with your facebook account</p>
         <%= fb_login_button('window.location = "/users/link_user_accounts";')%>

@@ -53,7 +53,7 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "memories", :action => "index"
 
   # to make /51 go to /memories/51
-  map.mempath ':id', :controller => 'memories', :action => 'show'
+  # map.mempath ':id', :controller => 'memories', :action => 'show'
 
 
   # See how all your routes lay out with "rake routes"

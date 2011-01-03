@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     @comment.save
     flash[:notice] = "Thank you for adding to this memory"
     respond_to do |format|
-      format.html { redirect_to memory_path(@comment.memory_id) }
+      format.html { redirect_to mempath_path(@comment.memory_id) }
       format.js
     end
   end
@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
     @comment.destroy
 
     respond_to do |format|
-      format.html { redirect_to memory_path(@comment.memory_id) }
+      format.html { redirect_to mempath_path(@comment.memory_id) }
       format.xml  { head :ok }
     end
   end

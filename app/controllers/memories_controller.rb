@@ -136,7 +136,8 @@ private
  def check_permission
    @memory = Memory.find(params[:id])
    unless @memory.users.include?(current_user)
-     redirect_to :controller => 'memories',:action => 'index'
+     # redirect_to :controller => 'memories',:action => 'index'
+     redirect_to(root_url)
    end
  end
  

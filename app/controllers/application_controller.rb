@@ -15,7 +15,8 @@ clear_facebook_session_information
 clear_fb_cookies!
 reset_session # i.e. logout the user
 flash[:notice] = "You have been disconnected from Facebook."
-redirect_to :controller => 'memories',:action => 'index'
+# redirect_to :controller => 'memories',:action => 'index'
+redirect_to(root_url)
 end
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password

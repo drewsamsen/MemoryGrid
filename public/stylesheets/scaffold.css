@@ -411,7 +411,7 @@ p.commenter-name a:hover {
 		padding:3px;
 	}
 	#memory-users li form {
-		display:none;
+		/* display:none; */
 	}
 .user input {
 	width:185px;

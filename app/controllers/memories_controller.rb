@@ -4,7 +4,7 @@ class MemoriesController < ApplicationController
   layout "index"
   before_filter :login_required
   before_filter :check_permission,:only => [:show,:edit,:update]
-  before_filter :set_params,:only => :update
+  
   
   auto_complete_for :memory, :title
   
@@ -69,11 +69,8 @@ class MemoriesController < ApplicationController
   def set_friends_edit
     @memory = Memory.find(params[:memory_id])
     @friends = friends
-    @friends_names = Array.new
-    @friends.each do |f|
-      @friends_names << f.name
-    end
-    render :partial => 'memories/set_friends'
+    
+    render :json => @friends
   end
 
   # GET /memories/1/edit
@@ -90,7 +87,7 @@ class MemoriesController < ApplicationController
     respond_to do |format|
       if @memory.save
         @tag = Tag.create(:user => current_user,:memory => @memory,:owner => true)
-        format.html { redirect_to(@memory, :notice => 'Memory was successfully created.') }
+        format.html { redirect_to(mempath_path(@memory), :notice => 'Memory was successfully created.') }
         format.xml  { render :xml => @memory, :status => :created, :location => @memory }
         format.js
       else
@@ -106,7 +103,7 @@ class MemoriesController < ApplicationController
    
     respond_to do |format|
       if @memory.update_attributes(params[:memory])
-        format.html { redirect_to(@memory, :notice => 'Memory was successfully updated.') }
+        format.html { redirect_to(mempath_path(@memory), :notice => 'Memory was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -122,7 +119,7 @@ class MemoriesController < ApplicationController
     @memory.destroy
 
     respond_to do |format|
-      format.html { redirect_to(memories_url) }
+      format.html { redirect_to(root_url) }
       format.xml  { head :ok }
     end
   end
@@ -143,17 +140,7 @@ private
    end
  end
  
- def set_params
-   unless params[:memory][:usr_attributes].blank?
-     @friends = friends
-    params[:memory][:usr_attributes].each do |a|
-      @friends.each do |fr|
-        a[1]["uid"] = fr.uid.to_i if fr.name == a[1]["name"]
-      end
-    end
-     
-    end
- end
+ 
 
 end
 

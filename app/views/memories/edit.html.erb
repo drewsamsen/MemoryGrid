@@ -3,15 +3,30 @@
 <script type = "text/javascript">
 	jQuery(document).ready(function(){
 		var memory_id = '<%= @memory.id %>'
+		
 		jQuery.ajax({
             url: '/memories/set_friends_edit',
 			data: { memory_id: memory_id},
             type: "POST",
 			success: function(data){
-               $('set_friends').innerHTML = data; 
-				
+				var friends = [];
+			   for(i=0;i<data.length;i++){
+			   	friends[i] = data[i]["name"];
+			   }
+				jQuery("body").delegate("input:text", "keyup", function(){
+					new Autocompleter.Local(this.id, this.id + '_auto_complete',friends);
+
+                });
+				jQuery("body").delegate("input:text", "blur", function(){
+					for(i=0;i<data.length;i++){
+			   	if (data[i]["name"] == this.value){
+					jQuery('#'+this.id+'_fb_id').val(data[i]["uid"]);
+				}
+			   }
+                });
             }
         });
+		
 		});
 </script>
 
@@ -41,12 +56,12 @@
 	</ul>
 	</div>
   
-  	<div id = "set_friends">
-        <div id="users">
-  	     <%= render :partial => 'user', :collection => @memory.users %>
-        </div>
-        <%= add_user_link "Tag users",@friends %>
-    </div>
+  	<div id="set_friends">
+    <div id="users"></div>
+  
+  <%= add_user_link "Tag Users" %>
+
+  </div>
       <%= f.submit 'Update' %>
 <% end %>
 

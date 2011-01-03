@@ -38,7 +38,7 @@
 <h1>New memory</h1>
 
 
-<% form_for(@memory) do |f| %>
+<% form_for @memory,:url => {:controller => :memories,:action => :create} do |f| %>
 
   <%= f.error_messages %>
 

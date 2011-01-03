@@ -1,0 +1,47 @@
+<% content_for :title do %>Social Memory<% end %>
+
+<div id="user-welcome">
+<% if logged_in? %>
+    <% if current_user.facebook_user? %>
+        <%= image_tag "http://graph.facebook.com/#{current_user.fb_user_id}/picture"%>
+        <p class="welcome">Welcome, <%= current_user.name %></p>
+        <p class="logout">
+          <a href="#" onclick="FB.Connect.logout(function (){ document.location='/logout/'; });">Logout</a>
+        </p>
+
+        <%= link_to '(+)Add New Memory', new_memory_path, :id => "add-new-mem" %>
+    <% else %>
+        <p>why don't you connect with your facebook account</p>
+        <%= fb_login_button('window.location = "/users/link_user_accounts";')%>
+        <p><%= link_to 'Logout', logout_path%></p>
+    <% end %>
+<% else %>
+    <h2>You are not logged in!</h2>
+    <p><%= link_to 'Signup', signup_path%> or <%= link_to 'Login', login_path%></p>
+<% end %>
+</div><!-- #user-welcome -->
+
+<ul id="the-grid">
+    <% @memories.each do |memory| %>
+      <li>
+        <% if memory.user_is_owner?(current_user)%>
+            <p class="mem"><%= link_to truncate(memory.body, :length => 100), memory %></p>
+            <p class="meta">              
+              <span class="user-count"><%= memory.users.size %></span>
+              <span class="comment-count"><%= memory.comments.size %></span>
+            </p>
+
+          <% else %>
+            <p class="mem"><%= link_to truncate(memory.body, :length => 100), memory %></p>
+            <p class="meta">
+              <span class="user-count"><%= memory.users.size %></span>
+              <span class="comment-count"><%= memory.comments.size %></span>
+            </p>
+          <% end %>
+       </li>
+    <% end %>
+
+</ul>
+
+
+

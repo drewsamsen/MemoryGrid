@@ -1,0 +1,76 @@
+<% content_for :title do %>Add new memory<% end %>
+
+<script type = "text/javascript">
+	jQuery(document).ready(function(){
+		
+		jQuery.ajax({
+            url: 'set_friends',
+            type: "POST",
+			success: function(data){
+				var friends = [];
+			   for(i=0;i<data.length;i++){
+			   	friends[i] = data[i]["name"];
+			   }
+				jQuery("body").delegate("input:text", "keyup", function(){
+					new Autocompleter.Local(this.id, this.id + '_auto_complete',friends);
+
+                });
+				jQuery("body").delegate("input:text", "blur", function(){
+					for(i=0;i<data.length;i++){
+			   	if (data[i]["name"] == this.value){
+					jQuery('#'+this.id+'_fb_id').val(data[i]["uid"]);
+				}
+			   }
+                });
+            }
+        });
+        jQuery('#new_memory').bind('submit',function() {
+              jQuery('#page').css('opacity','0.30');
+	      jQuery('#loading').css('display','block');
+              return true;
+           });
+		
+
+		});
+</script>
+
+<div id="content">
+<h1>New memory</h1>
+
+
+<% form_for @memory,:url => {:controller => :memories,:action => :create} do |f| %>
+
+  <%= f.error_messages %>
+
+    <%= f.text_area(:body, :size => "24x6") %>
+   
+    <p id="counter">180</p>
+
+    <script type="text/javascript">
+    jQuery('#memory_body').keyup(function () {
+        var left = 180 - jQuery(this).val().length;
+        if (left < 0) {
+            jQuery('#counter').text(left);
+            jQuery('#counter').addClass("excess");
+        } else {
+            jQuery('#counter').text(left);
+            jQuery('#counter').removeClass();
+        }
+        jQuery('#counter').text(left);
+    });
+    </script>
+
+  <div id="set_friends">
+    <div id="users"><%= render :partial => 'user', :collection => @memory.users %></div>
+  
+  <%= add_user_link "Tag Users" %>
+
+  </div>
+
+
+  <%= f.submit 'Create' %>
+
+<% end %>
+
+
+</div><!-- #content -->

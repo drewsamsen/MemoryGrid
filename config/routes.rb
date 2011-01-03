@@ -4,7 +4,13 @@ ActionController::Routing::Routes.draw do |map|
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.newmem '/new', :controller => 'memories', :action => 'new'
-
+  map.editmem ':id/edit', :controller => 'memories', :action => 'edit'
+  map.set_friends 'set_friends',:controller => 'memories',:action => 'set_friends'
+  map.memories 'memories',:controller => 'memories',:action => 'index'
+  map.memories_create 'memories/create',:controller => 'memories',:action => 'create'
+  map.root :controller => "memories", :action => "index"
+  map.mempath ':id', :controller => 'memories', :action => 'show' 
+  
 
  
  map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate'
@@ -50,7 +56,6 @@ ActionController::Routing::Routes.draw do |map|
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   # map.root :controller => "welcome"
-  map.root :controller => "memories", :action => "index"
 
   # to make /51 go to /memories/51
   # map.mempath ':id', :controller => 'memories', :action => 'show'

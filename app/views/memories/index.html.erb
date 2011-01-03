@@ -32,7 +32,7 @@
             </p>
 
           <% else %>
-            <p class="mem"><%= link_to truncate(memory.body, :length => 100), memory %></p>
+            <p class="mem"><a href="/<%= memory.id %>"><%= truncate(memory.body, :length => 100) %></a></p>
             <p class="meta">
               <span class="user-count"><%= memory.users.size %></span>
               <span class="comment-count"><%= memory.comments.size %></span>

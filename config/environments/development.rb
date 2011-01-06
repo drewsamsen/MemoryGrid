@@ -14,6 +14,12 @@ config.action_view.debug_rjs                         = true
 config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
-config.action_mailer.raise_delivery_errors = false
+config.action_mailer.raise_delivery_errors = true
+
+# set deliver method to :smtp, :sendmail or :test
+config.action_mailer.delivery_method = :smtp
+
+#these options are only needed if you choose smtp deliver
+# these are for my google apps account
 
 SITE_URL  = "http://127.0.0.1:3000"  

@@ -81,12 +81,12 @@ class MemoriesController < ApplicationController
   # POST /memories
   # POST /memories.xml
   def create
-   
    @memory = Memory.new(params[:memory])
 
     respond_to do |format|
       if @memory.save
         @tag = Tag.create(:user => current_user,:memory => @memory,:owner => true)
+        NotifyMailer.deliver_added_to_mem_notify(@current_user, @memory)
         format.html { redirect_to(mempath_path(@memory), :notice => 'Memory was successfully created.') }
         format.xml  { render :xml => @memory, :status => :created, :location => @memory }
         format.js

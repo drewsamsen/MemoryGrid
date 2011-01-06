@@ -38,4 +38,19 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+
 end
+
+# stuff for google apps and sending email lol
+
+# require "smtp_tls"
+
+# ActionMailer::Base.smtp_settings = {
+#   :tls => true,
+#   :address => "smtp.gmail.com",
+#   :port => "587",
+#   :domain => "thememorygrid.com",
+#   :authentication => :plain,
+#   :user_name => "notification@thememorygrid.com", # !!notice that your username must include your domain!
+#   :password => "37Reccos85"
+# }

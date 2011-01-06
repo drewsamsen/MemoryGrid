@@ -33,7 +33,6 @@
         <dependency name="rails" version="2.3.8" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
-      <source from="config/environment.rb" />
     </requirement>
     <requirement>
       <requirement>

@@ -41,19 +41,7 @@ Rails::Initializer.run do |config|
 
 end
 
-# stuff for google apps and sending email lol
-
-# require "smtp_tls"
-
-# ActionMailer::Base.smtp_settings = {
-#   :tls => true,
-#   :address => "smtp.gmail.com",
-#   :port => "587",
-#   :domain => "thememorygrid.com",
-#   :authentication => :plain,
-#   :user_name => "notification@thememorygrid.com", # !!notice that your username must include your domain!
-#   :password => [37Reccos85]
-# }
+# stuff for google apps and sending email
 
 ActionMailer::Base.smtp_settings = {
   :address        => "smtp.sendgrid.net",

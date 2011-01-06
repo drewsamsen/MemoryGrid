@@ -19,9 +19,10 @@ config.action_mailer.raise_delivery_errors = true
 # set deliver method to :smtp, :sendmail or :test
 config.action_mailer.delivery_method = :smtp
 
-config.action_mailer.default_url_options = { :host => 'sharp-ice-252.heroku.com' }
+# config.action_mailer.default_url_options = { :host => 'sharp-ice-252.heroku.com' }
 
 #these options are only needed if you choose smtp deliver
 # these are for my google apps account
+
 
 SITE_URL  = "http://127.0.0.1:3000"  

@@ -17,6 +17,7 @@ class Memory < ActiveRecord::Base
         new_facebooker.save(false)
         unless self.users.include?(new_facebooker)
          tag = Tag.create(:user => new_facebooker,:memory => self)
+         NotifyMailer.deliver_added_to_mem_notify(@new_facebooker, @memory)
         end
       end
     end 

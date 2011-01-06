@@ -54,3 +54,12 @@ end
 #   :user_name => "notification@thememorygrid.com", # !!notice that your username must include your domain!
 #   :password => [37Reccos85]
 # }
+
+ActionMailer::Base.smtp_settings = {
+  :address        => "smtp.sendgrid.net",
+  :port           => "25",
+  :authentication => :plain,
+  :user_name      => "app385077@heroku.com",
+  :password       => "1e774755ca2d54dd47",
+  :domain         => "thememorygrid.com"
+}

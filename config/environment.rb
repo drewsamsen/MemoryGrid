@@ -52,5 +52,5 @@ end
 #   :domain => "thememorygrid.com",
 #   :authentication => :plain,
 #   :user_name => "notification@thememorygrid.com", # !!notice that your username must include your domain!
-#   :password => "37Reccos85"
+#   :password => [37Reccos85]
 # }

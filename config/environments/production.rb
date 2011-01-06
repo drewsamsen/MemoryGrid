@@ -33,4 +33,6 @@ config.action_mailer.raise_delivery_errors = true
 # set deliver method to :smtp, :sendmail or :test
 config.action_mailer.delivery_method = :smtp
 
+config.action_mailer.default_url_options = { :host => 'sharp-ice-252.heroku.com' }
+
 SITE_URL  = "http://sharp-ice-252.heroku.com"

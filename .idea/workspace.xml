@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a35b35ce-45cc-4287-bdf6-68bd2bc36580" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/memorygrid5.iml" afterPath="$PROJECT_DIR$/.idea/memorygrid5.iml" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\action_mailer_optional_tls\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\action_mailer_optional_tls\Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\action_mailer_optional_tls\init.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\action_mailer_optional_tls\lib\action_mailer_tls.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\action_mailer_optional_tls\lib\smtp_tls.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\apps\mg\memorygrid5\vendor\plugins\action_mailer_optional_tls\test\tls_test.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/memories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/memories_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/memories/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="memorygrid5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +37,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="44" selection-start="659" selection-end="842" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.51437217">
               <folding />
             </state>
           </provider>
@@ -63,16 +67,16 @@
       <file leaf-file-name="memories_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/memories_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="82" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0">
+            <state line="91" column="17" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="44" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.84871405">
+            <state line="35" column="82" selection-start="1197" selection-end="1280" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,10 +128,10 @@
         <option value="$PROJECT_DIR$/app/views/memories/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/memories_controller.rb" />
         <option value="$PROJECT_DIR$/lib/smtp_tls.rb" />
-        <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/models/notify_mailer.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
       </list>
     </option>
   </component>
@@ -531,7 +535,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="264" y="66" width="1223" height="817" extended-state="0" />
+    <frame x="321" y="132" width="1223" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923833" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -653,6 +657,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/memories_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="17" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="1" selection-start="2364" selection-end="2364" vertical-scroll-proportion="0.0">
@@ -667,23 +678,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/memories_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="82" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0">
+        <state line="35" column="82" selection-start="1197" selection-end="1280" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="659" selection-end="842" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="44" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.84871405">
+        <state line="20" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.51437217">
           <folding />
         </state>
       </provider>

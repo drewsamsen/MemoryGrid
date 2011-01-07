@@ -33,7 +33,7 @@
 
 		});
 </script>
-
+<font color = "red"><%= flash[:notice] %></font>
 <div id="content">
 <h1>New memory</h1>
 
@@ -41,9 +41,11 @@
 <% form_for @memory,:url => {:controller => :memories,:action => :create} do |f| %>
 
   <%= f.error_messages %>
-
-    <%= f.text_area(:body, :size => "24x6") %>
-   
+    <% if @body %>
+    <%= f.text_area(:body,{:value => @body,:size => "24x6"}) %>
+    <% else %>
+	<%= f.text_area(:body, :size => "24x6") %>
+	<% end %>
     <p id="counter">180</p>
 
     <script type="text/javascript">

@@ -4,6 +4,7 @@ class MemoriesController < ApplicationController
   layout "index"
   before_filter :login_required
   before_filter :check_permission,:only => [:show,:edit,:update]
+  before_filter :set_current_user,:only => [:create,:update]
   
   
   auto_complete_for :memory, :title
@@ -81,12 +82,13 @@ class MemoriesController < ApplicationController
   # POST /memories
   # POST /memories.xml
   def create
+    
    @memory = Memory.new(params[:memory])
 
     respond_to do |format|
       if @memory.save
         @tag = Tag.create(:user => current_user,:memory => @memory,:owner => true)
-        NotifyMailer.deliver_added_to_mem_notify(@current_user, @memory)
+        
         format.html { redirect_to(mempath_path(@memory), :notice => 'Memory was successfully created.') }
         format.xml  { render :xml => @memory, :status => :created, :location => @memory }
         format.js
@@ -138,6 +140,20 @@ private
    unless @memory.users.include?(current_user)
      # redirect_to :controller => 'memories',:action => 'index'
      redirect_to(root_url)
+   end
+ end
+ 
+  def set_current_user
+   unless params[:memory][:usr_attributes].blank?
+     params[:memory][:usr_attributes].each do |a|
+      a[1]["current_user"] = current_user
+      if a[1]["uid"].to_i == 0
+        @memory = Memory.new
+        @body = params[:memory][:body]
+        flash[:notice] = "Only Facebook Friends can be tagged to the memory!"
+        render :template => 'memories/new'
+      end
+    end
    end
  end
  

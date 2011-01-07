@@ -78,7 +78,7 @@ body {
 	background:#FFF;
 	border-top:10px solid #000;
 	margin:40px auto 10px auto;
-	padding:10px 32px;
+	padding:10px 32px 32px 32px;
 	overflow:hidden;
 }
 
@@ -406,13 +406,20 @@ p.commenter-name a:hover {
 	list-style:none;
 	margin:0 0 0 15px;
 	padding:0;
+    overflow:hidden;
 }
 	#memory-users li, ul.sidebar-list li {
 		padding:3px;
+        clear:both;
 	}
 	#memory-users li form {
 		/* display:none; */
 	}
 .user input {
 	width:185px;
+}
+
+#memory-users li img {
+    float: left;
+    margin: 0 5px 5px 0;
 }

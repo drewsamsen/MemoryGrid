@@ -64,23 +64,34 @@
 <div id="users">
  <h4>In this memory</h4>
   <ul id="memory-users">
-  <% @memory.users.each do |user| %>
-  <li><%= user.name %>
-    <% if @memory.user_is_owner?(user)%>(author)<% end %>
-    <% unless user.ever_logged_in?(user) %>
-        <% form_remote_tag :url => { :action => 'fb_invite', :id => @memory } do %>
-			<%= submit_tag "Invite Users" %>
-		<% end %>
+
+    <% @memory.users.each do |user| %>
+        <% if @memory.user_is_owner?(user)%>
+            <li>
+              <%= image_tag "http://graph.facebook.com/#{user.fb_user_id}/picture"%> <%= user.name %> (author)
+            </li>
+        <% end %>
     <% end %>
-  </li>
-  <% end %>
+
+    <% @memory.users.each do |user| %>
+        <% unless @memory.user_is_owner?(user)%>
+            <li>
+              <%= image_tag "http://graph.facebook.com/#{user.fb_user_id}/picture"%> <%= user.name %>
+                <% unless user.ever_logged_in?(user) %>
+                    <% form_remote_tag :url => { :action => 'fb_invite', :id => @memory } do %>
+			        <%= submit_tag "Invite" %>
+		            <% end %>
+                <% end %>
+            </li>
+        <% end %>
+    <% end %>
   </ul>
 
   <% if @memory.user_is_owner?(current_user)%>
       <h4>Author Meta</h4>
       <ul class="sidebar-list">
-        <li><%= link_to 'Edit', editmem_path(@memory) %></li>
-        <li><%= link_to 'Destroy', @memory, :confirm => 'Are you sure?', :method => :delete %></li>
+        <li><%= link_to 'Edit Post', editmem_path(@memory) %></li>
+        <li><%= link_to 'Destroy Post', @memory, :confirm => 'Are you sure?', :method => :delete %></li>
       </ul>
   <% end %>
   

@@ -24,23 +24,13 @@
 <ul id="the-grid">
     <% @memories.each do |memory| %>
       <li>
-        <% if memory.user_is_owner?(current_user)%>
-           <p class="mem"><a href="/<%= memory.id %>"><%= truncate(memory.body, :length => 100) %></a></p>
-            <p class="meta">              
-              <span class="user-count"><%= memory.users.size %></span>
-              <span class="comment-count"><%= memory.comments.size %></span>
-            </p>
-
-          <% else %>
-            <p class="mem"><a href="/<%= memory.id %>"><%= truncate(memory.body, :length => 100) %></a></p>
-            <p class="meta">
-              <span class="user-count"><%= memory.users.size %></span>
-              <span class="comment-count"><%= memory.comments.size %></span>
-            </p>
-          <% end %>
+        <p class="mem"><a href="/<%= memory.id %>"><%= truncate(memory.body, :length => 100) %></a></p>
+          <p class="meta">
+            <span class="user-count"><%= memory.users.size %></span>
+            <span class="comment-count"><%= memory.comments.size %></span>
+          </p>
        </li>
     <% end %>
-
 </ul>
 
 

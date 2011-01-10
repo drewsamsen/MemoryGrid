@@ -60,7 +60,7 @@ class UsersController < ApplicationController
   end
   @user.save(false)
   session[:facebook_session] = facebook_session
-  redirect_to(root_url)
+  redirect_back_or_default(root_url)
 end
 
 def logout_facebook

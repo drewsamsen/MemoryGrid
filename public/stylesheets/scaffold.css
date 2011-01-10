@@ -423,3 +423,7 @@ p.commenter-name a:hover {
     float: left;
     margin: 0 5px 5px 0;
 }
+
+#inviter {
+    z-index:999999;
+}

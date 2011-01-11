@@ -24,13 +24,24 @@
 
 <ul id="the-grid">
     <% @memories.each do |memory| %>
-      <li>
-      	<%= image_tag("http://graph.facebook.com/#{memory.author_id(memory)}/picture", :class => "author_pic") %>
+      <li onclick="document.location.href='/<%= memory.id %>'">
+      	<%= image_tag("http://graph.facebook.com/#{memory.author_fb_id(memory)}/picture", :class => "author_pic") %>
         <p class="mem"><a href="/<%= memory.id %>"><%= truncate(memory.body, :length => 100) %></a></p>
-          <p class="meta">          	
+          <p class="meta">
+          	<% memory.users.each do |user| %>
+				<% unless user == memory.author_info(memory) %>				
+				<%= image_tag("http://graph.facebook.com/#{user.fb_user_id}/picture", :class => "tagged-user-pic") %>
+				<% end %>
+			<% end %>
+          	<span class="author"><%= memory.author_name(memory) %></span>        	
             <span class="user-count"><%= memory.users.size %></span>
             <span class="comment-count"><%= memory.comments.size %></span>
           </p>
+		<% unless memory.has_user_commented?(current_user) %>
+			<p class="incomplete">
+				<span>What do <span class="underline">you</span> remember about this memory? Click through to contribute.</span>
+			</p>
+		<% end %>
        </li>
     <% end %>
 </ul>

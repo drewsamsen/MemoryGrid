@@ -216,6 +216,10 @@ body {
 		border-bottom:1px dotted #e1e1e1;
 		position:relative;
 	}
+		#the-grid li.over, #the-grid li:hover {
+			cursor:pointer;
+			background:#FAFAFA;
+		}
 	#the-grid p.mem {
 		width:370px;
 		position:absolute;
@@ -234,7 +238,7 @@ body {
 			text-decoration:none;
 		}
 		#the-grid p.mem a:hover {
-			text-decoration:underline;
+			text-decoration:none;
 		}
 		
 	#the-grid p.meta {
@@ -334,7 +338,6 @@ p.comment-content {
 	padding:15px 0;
 	position:relative;
 }
-
 .meta span {
 	color:#cccccc;
     display: inline-block;
@@ -344,6 +347,7 @@ p.comment-content {
     position: relative;
 	line-height:30px;
 	font-weight:bold;
+	display:none;
 }
 .meta span.user-count {
 	background:url(../images/icons.png) no-repeat 0 3px;
@@ -447,4 +451,24 @@ p.commenter-name a:hover {
 	position:absolute;
 	left:5px;
 	top:10px;
+}
+.meta img.tagged-user-pic {
+	float:left;
+	width:25px;
+	height:25px;
+	padding:0 2px 2px 0;
+}
+p.incomplete {
+	bottom: 10px;
+    font-size: 10px;
+    line-height: 11px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 217px;
+	color:#888;
+}
+span.underline {
+	text-decoration:underline;
 }

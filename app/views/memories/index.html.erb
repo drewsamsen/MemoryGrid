@@ -3,7 +3,8 @@
 <div id="user-welcome">
 <% if logged_in? %>
     <% if current_user.facebook_user? %>
-        <%= image_tag "http://graph.facebook.com/#{current_user.fb_user_id}/picture"%>
+         <fb:profile-pic uid="<%= current_user.fb_user_id%>" facebook-logo="flase" height='40'>
+    </fb:profile-pic>
         <p class="welcome">Welcome, <%= current_user.name %></p>
         <p class="logout">
           <a href="#" onclick="FB.Connect.logout(function (){ document.location='/logout/'; });">Logout</a>
@@ -24,8 +25,9 @@
 <ul id="the-grid">
     <% @memories.each do |memory| %>
       <li>
+      	<%= image_tag("http://graph.facebook.com/#{memory.author_id(memory)}/picture", :class => "author_pic") %>
         <p class="mem"><a href="/<%= memory.id %>"><%= truncate(memory.body, :length => 100) %></a></p>
-          <p class="meta">
+          <p class="meta">          	
             <span class="user-count"><%= memory.users.size %></span>
             <span class="comment-count"><%= memory.comments.size %></span>
           </p>

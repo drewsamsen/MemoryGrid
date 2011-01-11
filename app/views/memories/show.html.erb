@@ -80,6 +80,7 @@
                 <% unless user.ever_logged_in?(user) %>
 				<div id="inviter">
                 <fb:serverfbml>
+                	<style type="text/css"> .pop_content h2 span { background: red;}</style>
                     <script type="text/fbml">
                         <% content_for("invite_user") do %>
                         Check out my new memory "<%= link_to @memory.title,"#{SITE_URL}/memories/#{@memory.id}" %>" in Memorygrid.  Lots of good stuff in

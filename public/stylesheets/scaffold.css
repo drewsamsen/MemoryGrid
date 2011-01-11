@@ -214,15 +214,18 @@ body {
 		overflow:hidden;
 		height:70px;
 		border-bottom:1px dotted #e1e1e1;
+		position:relative;
 	}
 	#the-grid p.mem {
-		width:443px;
-		float:left;
-		padding:10px 10px 0 0;
+		width:370px;
+		position:absolute;
+		padding:0;
 		overflow:hidden;
 		margin:0;
 		font-size:13px;
 		line-height:20px;
+		top:10px;
+		left:70px;
 	}
 	#the-grid p.mem a, #the-grid p.mem a:visited {
 		color:#000;
@@ -424,6 +427,24 @@ p.commenter-name a:hover {
     margin: 0 5px 5px 0;
 }
 
-#inviter {
-    z-index:999999;
+#inviter {   
+    /* height: 364px !important;
+    left: 50%;
+    margin-left: -291px;
+    margin-top: -182px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    width: 582px; */
+    z-index: 999999;
+	display:none;
+}
+.generic_dialog {
+	position: absolute;
+	left:-100px !important;
+}
+#the-grid li img.author_pic {
+	position:absolute;
+	left:5px;
+	top:10px;
 }

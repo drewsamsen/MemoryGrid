@@ -32,6 +32,17 @@ class Memory < ActiveRecord::Base
   def user_is_owner?(user)
     (@tag = Tag.find_by_user_id_and_memory_id(user.id, self.id)) && @tag.owner
   end
+  
+  def author_id(memory)
+    @users = memory.users.find(:all)
+      users.each do |user|
+        if user_is_owner?(user)
+          @user = user
+        end
+    end
+    @user.fb_user_id
+  end
+  
 
   
 end

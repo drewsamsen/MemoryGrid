@@ -347,6 +347,8 @@ p.comment-content {
     position: relative;
 	line-height:30px;
 	font-weight:bold;
+}
+.meta span.author {
 	display:none;
 }
 .meta span.user-count {
@@ -450,13 +452,14 @@ p.commenter-name a:hover {
 #the-grid li img.author_pic {
 	position:absolute;
 	left:5px;
-	top:10px;
+	top:10px;	
 }
 .meta img.tagged-user-pic {
 	float:left;
 	width:25px;
 	height:25px;
 	padding:0 2px 2px 0;
+	display:none;
 }
 p.incomplete {
 	bottom: 10px;
@@ -468,6 +471,7 @@ p.incomplete {
     right: 0;
     width: 217px;
 	color:#888;
+	display:none;
 }
 span.underline {
 	text-decoration:underline;

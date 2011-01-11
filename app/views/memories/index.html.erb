@@ -33,7 +33,7 @@
 				<%= image_tag("http://graph.facebook.com/#{user.fb_user_id}/picture", :class => "tagged-user-pic") %>
 				<% end %>
 			<% end %>
-          	<span class="author"><%= memory.author_name(memory) %></span>        	
+          	<span class="author">Posted by: <%= memory.author_name(memory) %></span>        	
             <span class="user-count"><%= memory.users.size %></span>
             <span class="comment-count"><%= memory.comments.size %></span>
           </p>

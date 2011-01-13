@@ -35,7 +35,7 @@ class Memory < ActiveRecord::Base
   
   def author_info(memory)
     @users = memory.users.find(:all)
-      users.each do |user|
+      @users.each do |user|
         if user_is_owner?(user)
           @user = user
         end

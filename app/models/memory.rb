@@ -37,10 +37,10 @@ class Memory < ActiveRecord::Base
     @users = memory.users.find(:all)
       @users.each do |user|
         if user_is_owner?(user)
-          @user = user
+          @theuser = user
         end
     end
-    @user
+    @theuser
   end
   
   def author_fb_id(memory)    

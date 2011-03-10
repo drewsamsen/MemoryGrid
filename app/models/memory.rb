@@ -33,19 +33,22 @@ class Memory < ActiveRecord::Base
     (@tag = Tag.find_by_user_id_and_memory_id(user.id, self.id)) && @tag.owner
   end
   
-  def author    
-    self.tags.each do |t|
-      @memory_author = t.user if t.owner
+  def author_info(memory)
+    @users = memory.users.find(:all)
+      @users.each do |user|
+        if user_is_owner?(user)
+          @theuser = user
+        end
     end
-    return @memory_author
+    @theuser
   end
   
-  def author_fb_id   
-    self.author.fb_user_id      
+  def author_fb_id(memory)    
+    author_info(memory).fb_user_id      
   end
   
-  def author_name
-    self.author.name
+  def author_name(memory)
+    author_info(memory).name
   end
   
   def has_user_commented?(user) 

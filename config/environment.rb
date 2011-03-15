@@ -47,7 +47,10 @@ ActionMailer::Base.smtp_settings = {
   :address        => "smtp.sendgrid.net",
   :port           => "25",
   :authentication => :plain,
-  :user_name      => "app385077@heroku.com",
-  :password       => "1e774755ca2d54dd47",
-  :domain         => "thememorygrid.com"
+  :user_name      => ENV['SENDGRID_USERNAME'],
+  :password       => ENV['SENDGRID_PASSWORD'],
+  :domain         => ENV['SENDGRID_DOMAIN']
+  # :user_name      => "app385077@heroku.com",
+  # :password       => "1e774755ca2d54dd47",
+  # :domain         => "thememorygrid.com"
 }

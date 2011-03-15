@@ -27,7 +27,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: mg4_development
+  database: mg5_development
   pool: 5
   username: root
   password: 85Reccos37  

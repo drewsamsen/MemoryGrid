@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(:version => 20110111031859) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "author_name"
   end
 
   create_table "memories", :force => true do |t|

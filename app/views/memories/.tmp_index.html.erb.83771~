@@ -1,4 +1,4 @@
-<% content_for :title do %>Social Memory<% end %>
+<% content_for :title do %>Social Memory 1.1.2<% end %>
 
 <div id="user-welcome">
 <% if logged_in? %>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110111031859) do
+ActiveRecord::Schema.define(:version => 20110315181555) do
 
   create_table "comments", :force => true do |t|
     t.text     "content"
@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20110111031859) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "author_name"
   end
 
   create_table "memories", :force => true do |t|
@@ -36,7 +37,7 @@ ActiveRecord::Schema.define(:version => 20110111031859) do
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40
-    t.string   "name",                      :limit => 100, :default => ""
+    t.string   "name",                      :limit => 100
     t.string   "email",                     :limit => 100
     t.string   "crypted_password",          :limit => 40
     t.string   "salt",                      :limit => 40

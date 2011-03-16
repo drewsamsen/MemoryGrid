@@ -5,7 +5,7 @@
     <fb:profile-pic uid="<%= current_user.fb_user_id%>" facebook-logo="flase" height='40'>
     </fb:profile-pic>
     <p class="welcome">
-        Welcome, <%= current_user.name %>
+        Welcome, <%= current_user.name.slice(/\w+/) %>
     </p>
     <p class="logout">
         <a href="#" onclick="FB.Connect.logout(function (){ document.location='/logout/'; });">Logout</a>
@@ -69,7 +69,7 @@
             <% @memory.users.each do |user| %>
             <% if @memory.user_is_owner?(user) %>
             <li>
-                <%= image_tag "http://graph.facebook.com/#{user.fb_user_id}/picture" %><%= user.name %>(author)
+                <%= image_tag "http://graph.facebook.com/#{user.fb_user_id}/picture" %><%= user.name %>
             </li>
             <% end %>
             <% end %>
@@ -78,23 +78,31 @@
             <li>
                 <%= image_tag "http://graph.facebook.com/#{user.fb_user_id}/picture" %><%= user.name %>
                 <% unless user.ever_logged_in?(user) %>
-				<div id="inviter">
+				
+				
+				<div class="invite-link inviter-<%= user.name.slice(/\w+/) %>">
+					<a class="target" href="#">Get <%= user.name.slice(/\w+/) %> in here!</a>	
+						
                 <fb:serverfbml>
+					
                 	<style type="text/css"> .pop_content h2 span { background: red;}</style>
                     <script type="text/fbml">
                         <% content_for("invite_user") do %>
-                        Check out my new memory "<%= link_to @memory.title,"#{SITE_URL}/memories/#{@memory.id}" %>" in Memorygrid.  Lots of good stuff in
-                        there!<% end %>
-                        <fb:request-form type="Memory" content = 'Check out my new memory <%= "#{@memory.title}" %> in Memorygrid.  Lots of good stuff in
-                        there!' action = '<%="#{SITE_URL}/memories/show/#{@memory.id.to_s}"%>'>
+                        New on MemoryGrid: "<%= link_to @memory.title,"#{SITE_URL}/memories/#{@memory.id}" %>"<% end %>
+                        <fb:request-form type="MemoryGrid" invite="true" content = '<%= "#{@memory.body}" %>' action = '<%="#{SITE_URL}/#{@memory.id.to_s}"%>'>
                         <%= fb_request_form_submit(:uid => user.fb_user_id, :label => "Invite %n") %>
                        
                     </script>
-                </fb:serverfbml></div><% end %>
+									
+                </fb:serverfbml>
+				</div><!--inviter-->
+				<% end %>
             </li><% end %>
             <% end %>
         </ul><% if @memory.user_is_owner?(current_user) %>
-        <h4>Author Meta</h4>
+        
+		
+		<h4>Author Meta</h4>
         <ul class="sidebar-list">
             <li>
                 <%= link_to 'Edit Post', editmem_path(@memory) %>

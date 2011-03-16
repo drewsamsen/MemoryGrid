@@ -5,7 +5,7 @@
     <% if current_user.facebook_user? %>
          <fb:profile-pic uid="<%= current_user.fb_user_id%>" facebook-logo="flase" height='40'>
     </fb:profile-pic>
-        <p class="welcome">Welcome, <%= current_user.name %></p>
+        <p class="welcome">Welcome, <%= current_user.name.slice(/\w+/) %></p>
         <p class="logout">
           <a href="#" onclick="FB.Connect.logout(function (){ document.location='/logout/'; });">Logout</a>
         </p>

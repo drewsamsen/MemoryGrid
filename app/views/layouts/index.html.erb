@@ -8,9 +8,29 @@
       <script>jQuery.noConflict();</script>
       <%= javascript_include_tag "http://jquery-ui.googlecode.com/svn/trunk/ui/jquery.ui.core.js" %>
 
+		<script type="text/javascript"> 
+			jQuery(document).ready(function(){				
+				
+				jQuery(".target").click(function(){	
+				
+					var myClass = jQuery(this).parent().attr("class");					
+											
+					jQuery("." + myClass + " .fbmlIframe").addClass("clicked");
+										
+					return false;
+				});				
+				 
+				jQuery("body").click(function(){					
+					jQuery("#wrap .fbmlIframe").removeClass("clicked");
+				});	
+			});
+		</script> 
+		
+	
+
     </head>
     <body>
-
+   
     <div id="loading">Loading...</div>
 
     <div id="page"><!-- entire page - to dim when loading overlay -->
@@ -22,9 +42,8 @@
         <h3><span>Social Memory</span></h3>
         <h4><a href="#">information</a> / <a href="#">twitter</a></h4>
       </div><!-- #header -->
-    <div id="notice">
+    <div id="notice">    	
     <%- flash.each do |name, msg| -%>
-
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
     <%- end -%>      
     </div><!-- #notice -->
@@ -48,5 +67,6 @@
   })();
     </script>
 
+	
     </body>
 </html>

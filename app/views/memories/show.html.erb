@@ -80,7 +80,7 @@
                 <% unless user.ever_logged_in?(user) %>
 				
 				
-				<div class="invite-link inviter-<%= user.name.slice(/\w+/) %>">
+				<div class="inviter-<%= user.name.slice(/\w+/) %>">
 					<a class="target" href="#">Get <%= user.name.slice(/\w+/) %> in here!</a>	
 						
                 <fb:serverfbml>

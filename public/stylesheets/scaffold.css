@@ -494,5 +494,7 @@ span.underline {
 }
 .target {
 	font-size:9px;
+	color:#C1272D;
+	font-weight:bold;
 	}
 }

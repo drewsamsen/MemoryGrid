@@ -74,6 +74,11 @@
             </li>
             <% end %>
             <% end %>
+			
+			 <% content_for("invite_user") do %>
+	                        You've been added to a memory on TheMemoryGrid.com: "<%= @memory.body %>" - <%= link_to "View and contribute to this memory.","http://thememorygrid.com/#{@memory.id}" %> <fb:req-choice url="http://thememorygrid.com" label="grid" />							
+			<% end %>
+							
             <% @memory.users.each do |user| %>
             <% unless @memory.user_is_owner?(user) %>
             <li>
@@ -81,15 +86,12 @@
                 <% unless user.ever_logged_in?(user) %>
 				
                <div class="inviter-<%= user.name.slice(/\w+/) %>">
-					<a class="target" href="#">Get <%= user.name.slice(/\w+/) %> in here!</a>	
+					<a class="target" href="#">Invite <%= user.name.slice(/\w+/) %></a>	
 						
 	                <fb:serverfbml>
 	                    <script type="text/fbml">
-	                        <% content_for("invite_user") do %>
-	                        You've been added to a memory on TheMemoryGrid.com: "<%= @memory.body %>" - <%= link_to "View and contribute to this memory.","#{SITE_URL}/memories/#{@memory.id}" %> <fb:req-choice url="http://thememorygrid.com" label="grid" />							
-							<% end %>
-							<% fb_request_form("MemoryGrid","invite_user","#{SITE_URL}/#{@memory.id.to_s}",options={:invite => true}) do %>	
-   		
+	                       
+							<% fb_request_form("MemoryGrid","invite_user","http://thememorygrid.com/#{@memory.id}",options={:invite => true}) do %>	
 	                        <%= fb_request_form_submit(:uid => user.fb_user_id, :label => "Invite %n") %>
 							<% end %>
 	                    </script>									

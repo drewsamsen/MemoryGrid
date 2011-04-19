@@ -16,7 +16,7 @@ class UserMailer < ActionMailer::Base
   protected
     def setup_email(user)
       @recipients  = "#{user.email}"
-      @from        = "santhosh6265@gmail.com"
+      @from        = "drew@weblogicnow.com"
       @subject     = "Memory Grid"
       @sent_on     = Time.now
       @body[:user] = user

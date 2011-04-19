@@ -270,7 +270,9 @@ body {
 	}
 	#user-welcome img {
 		float:left;
-		padding:0 10px 0 0;
+		padding:0 10px 0 5px;
+		height:40px;
+		width:40px;
 	}
 	#user-welcome p {
 		font-size:12px;

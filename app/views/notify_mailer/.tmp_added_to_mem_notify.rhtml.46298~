@@ -1,0 +1,3 @@
+Hi <%= @user.name %>,
+
+You were added to a memory!

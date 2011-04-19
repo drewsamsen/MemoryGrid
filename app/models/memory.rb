@@ -21,7 +21,7 @@ class Memory < ActiveRecord::Base
          user_ids << new_facebooker.id
          tag = Tag.create(:user => new_facebooker,:memory => self)
          unless new_facebooker.email.blank?
-           NotifyMailer.deliver_added_to_mem_notify(new_facebooker,self,attributes[1]["current_user"].name)
+           NotifyMailer.deliver_added_to_mem_notify(new_facebooker,self,attributes[1]["current_user"])
          end 
         end
       end

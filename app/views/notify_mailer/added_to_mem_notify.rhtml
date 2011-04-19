@@ -1,3 +1,7 @@
-Hi <%= @user.name %>,
+Hi <%= @user.name.slice(/\w+/) %>,
 
-You were added to a memory!
+<%= @name.name.slice(/\w+/) %> added to a memory on TheMemoryGrid.com!
+
+"<%= @memory.body %>"
+
+<a href="http://thememorygrid.com/<%= @memory.id %>">View and add to this memory.</a>

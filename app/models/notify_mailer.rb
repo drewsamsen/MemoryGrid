@@ -3,7 +3,8 @@ class NotifyMailer < ActionMailer::Base
     recipients    user.email
     from          "notification@thememorygrid.com"
     subject       "#{name} added you to a memory"
-    body          :user => user
+    body          :user => user, 
+                  :memory => memory, 
+                  :name => name
   end
-
 end

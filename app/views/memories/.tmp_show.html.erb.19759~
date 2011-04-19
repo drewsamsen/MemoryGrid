@@ -1,0 +1,118 @@
+<% content_for :title do %><%= truncate(@memory.body, :length => 35) %><% end %>
+<div id="user-welcome">
+    <% if logged_in? %>
+    <% if current_user.facebook_user? %>
+    <fb:profile-pic uid="<%= current_user.fb_user_id%>" facebook-logo="flase" height='40'>
+    </fb:profile-pic>
+    <p class="welcome">
+        Welcome, <%= current_user.name.slice(/\w+/) %>
+    </p>
+    <p class="logout">
+        <a href="#" onclick="FB.Connect.logout(function (){ document.location='/logout/'; });">Logout</a>
+    </p>
+    <%= link_to '(+)Add New Memory', newmem_path, :id => "add-new-mem" %>
+    <% else %>
+    <p>
+        why don't you connect with your facebook account
+    </p>
+    <%= fb_login_button('window.location = "/users/link_user_accounts";') %>
+    <p>
+        <%= link_to 'Logout', logout_path %>
+    </p>
+    <% end %>
+    <% else %>
+    <h2>You are not logged in!</h2>
+    <p>
+        <%= link_to 'Signup', signup_path %>or <%= link_to 'Login', login_path %>
+    </p>
+    <% end %>
+</div>
+<!-- #user-welcome -->
+<div id="content">
+        <p id="show-mem">
+        <%=h @memory.body %>
+    </p>
+    <div id="comments">
+        <%= render :partial => 'comments/comment', :collection => @memory.comments %>
+    </div>
+    <h3>Add to this memory</h3>
+    <% form_for :comment, :url => memory_comments_path(:memory_id), :html => { :id => 'comment_form'} do |f| %>
+    <%= f.hidden_field :memory_id, :value => @memory.id %>
+    <p>
+        <%= f.text_area :content, :rows => 4 %>
+    </p>
+    <%= submit_tag 'Add' %>
+    <p id="comment_counter">
+        180
+    </p>
+    <script type="text/javascript">
+        jQuery('#comment_content').keyup(function(){
+            var left = 180 - jQuery(this).val().length;
+            if (left < 0) {
+                jQuery('#comment_counter').text(left);
+                jQuery('#comment_counter').addClass("excess");
+            }
+            else {
+                jQuery('#comment_counter').text(left);
+                jQuery('#comment_counter').removeClass();
+            }
+            jQuery('#comment_counter').text(left);
+        });
+    </script>
+    <% end %>
+</div>
+<!-- #content -->
+<div id="sidebar">
+    <div id="users">
+        <h4>In this memory</h4>
+        <ul id="memory-users">
+            <% @memory.users.each do |user| %>
+            <% if @memory.user_is_owner?(user) %>
+            <li>
+                <%= image_tag "http://graph.facebook.com/#{user.fb_user_id}/picture" %><%= user.name %>
+            </li>
+            <% end %>
+            <% end %>
+            <% @memory.users.each do |user| %>
+            <% unless @memory.user_is_owner?(user) %>
+            <li>
+                <%= image_tag "http://graph.facebook.com/#{user.fb_user_id}/picture" %><%= user.name %>
+                <% unless user.ever_logged_in?(user) %>
+				
+				
+				<div class="inviter-<%= user.name.slice(/\w+/) %>">
+					<a class="target" href="#">Get <%= user.name.slice(/\w+/) %> in here!</a>	
+						
+                <fb:serverfbml>
+					
+                	<style type="text/css"> .pop_content h2 span { background: red;}</style>
+                    <script type="text/fbml">
+                        <% content_for("invite_user") do %>
+                        New on MemoryGrid: "<%= link_to @memory.title,"#{SITE_URL}/memories/#{@memory.id}" %>"<% end %>
+                        <fb:request-form type="MemoryGrid" invite="true" content = '<%= "#{@memory.body}" %>' action = '<%="#{SITE_URL}/#{@memory.id.to_s}"%>'>
+                        <%= fb_request_form_submit(:uid => user.fb_user_id, :label => "Invite %n") %>
+                       
+                    </script>
+									
+                </fb:serverfbml>
+				</div><!--inviter-->
+				<% end %>
+            </li><% end %>
+            <% end %>
+        </ul><% if @memory.user_is_owner?(current_user) %>
+        
+		
+		<h4>Author Meta</h4>
+        <ul class="sidebar-list">
+            <li>
+                <%= link_to 'Edit Post', editmem_path(@memory) %>
+            </li>
+            <li>
+                <%= link_to 'Destroy Post', @memory, :confirm => 'Are you sure?', :method => :delete %>
+            </li>
+        </ul>
+        <% end %>
+    </div>
+    <!-- #users -->
+</div>
+<!-- #sidebar -->

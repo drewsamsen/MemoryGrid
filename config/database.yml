@@ -21,7 +21,7 @@
 #  database: mg4_development
 #  pool: 5
 #  username: root
-#  password: 85Reccos37
+#  password: 
 
 development:
   adapter: mysql
@@ -30,7 +30,7 @@ development:
   database: mg5_development
   pool: 5
   username: root
-  password: 85Reccos37  
+  password: 85Reccos37
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

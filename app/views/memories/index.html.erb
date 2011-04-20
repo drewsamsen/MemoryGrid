@@ -25,7 +25,8 @@
       <li onclick="document.location.href='/<%= memory.id %>'">
       	<%= image_tag("http://graph.facebook.com/#{memory.author_fb_id}/picture", :class => "author_pic") unless memory.author_fb_id.blank? %>
         <p class="mem"><a href="/<%= memory.id %>"><%= truncate(memory.body, :length => 110) %></a></p>
-          <p class="meta">
+        <p class="updated-at"><%= time_ago_in_words(memory.updated_at) %> ago</p>  
+		  <p class="meta">
           	<% memory.users.each do |user| %>
 				<% unless memory.user_is_owner?(user) %>				
 				<%= image_tag("http://graph.facebook.com/#{user.fb_user_id}/picture", :class => "tagged-user-pic") %>

@@ -232,6 +232,14 @@ body {
 		top:10px;
 		left:70px;
 	}
+	#the-grid p.updated-at {
+		position:absolute;
+		bottom:8px;
+		color:#999999;
+		left:70px;
+		margin:0;
+		font-size:9px;
+	}
 	#the-grid p.mem a, #the-grid p.mem a:visited {
 		color:#000;
 	}
@@ -451,7 +459,7 @@ p.commenter-name a:hover {
 #the-grid li img.author_pic {
 	position:absolute;
 	left:10px;
-	top:10px;
+	top:14px;
 	width:40px;
 	height:40px;	
 }

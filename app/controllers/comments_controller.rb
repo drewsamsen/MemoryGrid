@@ -6,7 +6,11 @@ class CommentsController < ApplicationController
       if @comment.save
         
         @comment.memory.users.each do |u|
-          NotifyMailer.deliver_comment_notify(current_user,@comment, u)
+          unless current_user == u
+              unless u.email.empty?
+                NotifyMailer.deliver_comment_notify(current_user,@comment, u)
+              end
+          end          
         end        
         
         flash[:notice] = "Thank you for adding to this memory"

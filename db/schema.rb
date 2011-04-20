@@ -9,12 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110315181555) do
+ActiveRecord::Schema.define(:version => 20110420010127) do
 
   create_table "comments", :force => true do |t|
     t.text     "content"
     t.integer  "memory_id"
-    t.integer  "user_id"
+    t.integer  "user_id",     :limit => 8
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "author_name"

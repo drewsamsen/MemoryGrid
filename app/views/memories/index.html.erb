@@ -33,7 +33,7 @@
 		<% memory.users.each do |user| %> 
 			<% unless user.fb_user_id == memory.author_fb_id %>           
             <li>
-                <%= image_tag "http://graph.facebook.com/#{user.fb_user_id}/picture" %>       
+                <img src="http://graph.facebook.com/<%= user.fb_user_id %>/picture" title="<%= user.name %>" />       
             </li>
 			<% end %>			
 		<% end %>

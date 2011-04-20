@@ -1,5 +1,0 @@
-Hi <%= @tagged_user.name.slice(/\w+/) %>, <%= @current_user.name.slice(/\w+/) %> added to one of your memories on TheMemoryGrid.com!
-
-They added, "<%= @comment.content %>"
-
-View and add to this memory at http://thememorygrid.com/<%= @comment.memory_id %>

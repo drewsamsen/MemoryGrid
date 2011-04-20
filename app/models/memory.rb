@@ -34,18 +34,18 @@ class Memory < ActiveRecord::Base
   end
   
   def author
-    self.tags.each do |t|
+    tags.each do |t|
       @memory_author = t.user if t.owner
     end
     return @memory_author
   end
   
   def author_fb_id
-    self.author.fb_user_id    
+    author.fb_user_id    
   end
   
   def author_name
-    self.author.name
+    author.name
   end
   
   def has_user_commented?(user) 

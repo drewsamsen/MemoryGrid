@@ -80,13 +80,14 @@ body {
 	margin:40px auto 10px auto;
 	padding:10px 32px 32px 32px;
 	overflow:hidden;
+	position:relative;
 }
 
 #header {
-	background:url(../images/memory-grid-logo.png) no-repeat 10px 0;
+	background:url(../images/memory-grid-logo.png) no-repeat 10px 10px;
 	border-bottom:1px dotted #e1e1e1;
 	position:relative;
-	height:80px;
+	height:100px;
 }
 	#header a#home-link {
 		display:block;
@@ -226,8 +227,8 @@ body {
 		padding:0;
 		overflow:hidden;
 		margin:0;
-		font-size:13px;
-		line-height:20px;
+		font-size:11px;
+		line-height:17px;
 		top:10px;
 		left:70px;
 	}
@@ -256,14 +257,13 @@ body {
 			color:#999;
 		}
 	
-#user-welcome {
-	border-bottom:1px dotted #e1e1e1;
+#user-welcome {	
 	padding:10px 5px;
-	height:40px;
 	overflow:hidden;
-	position:relative;
-	background:#fafafa;
-	margin:0 0 15px 0;
+	position:absolute;
+	right:31px;
+	top:25px;
+	width:220px;
 }
 	#user-welcome, #user-welcome a {
 		color:#999;
@@ -271,33 +271,32 @@ body {
 	#user-welcome img {
 		float:left;
 		padding:0 10px 0 5px;
-		height:40px;
-		width:40px;
+		height:20px;
+		width:20px;
 	}
 	#user-welcome p {
-		font-size:12px;
-		margin:0;
+		font-size:11px;
+		margin:0 0 15px 0;
 	}
 	#user-welcome #add-new-mem {
 		color:#C1272D;
 		text-decoration:none;
 		display:block;
 		width:222px;
-		height:40px;
-		line-height:40px;
-		position:absolute;
+		height:30px;
+		line-height:30px;
 		right:5px;
 		top:10px;
 		text-align:center;
 		border:1px dotted #e1e1e1;
-		font-family:"Palatino Linotype","Book Antiqua",Palatino,serif;
+		font-family:Arial, Helvetica, sans-serif;
 		text-transform:uppercase;
-		font-size:11px;
-		letter-spacing:3px;
+		font-size:12px;
+		letter-spacing:1px;
 		background:#f3f3f3;
 		font-weight:bold;
 	}
-	#add-new-mem:hover {
+	#user-welcome #add-new-mem:hover {
 		background:#eeeeee;
 	}
 
@@ -451,8 +450,10 @@ p.commenter-name a:hover {
 }
 #the-grid li img.author_pic {
 	position:absolute;
-	left:5px;
-	top:10px;	
+	left:10px;
+	top:10px;
+	width:40px;
+	height:40px;	
 }
 .meta img.tagged-user-pic {
 	float:left;

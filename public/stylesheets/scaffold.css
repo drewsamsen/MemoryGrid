@@ -213,7 +213,7 @@ body {
 		padding:0;
 		margin:0;
 		overflow:hidden;
-		height:70px;
+		height:65px;
 		border-bottom:1px dotted #e1e1e1;
 		position:relative;
 	}
@@ -232,14 +232,7 @@ body {
 		top:10px;
 		left:70px;
 	}
-	#the-grid p.updated-at {
-		position:absolute;
-		bottom:8px;
-		color:#999999;
-		left:70px;
-		margin:0;
-		font-size:9px;
-	}
+
 	#the-grid p.mem a, #the-grid p.mem a:visited {
 		color:#000;
 	}
@@ -459,7 +452,7 @@ p.commenter-name a:hover {
 #the-grid li img.author_pic {
 	position:absolute;
 	left:10px;
-	top:14px;
+	top:12px;
 	width:40px;
 	height:40px;	
 }
@@ -514,3 +507,41 @@ span.underline {
 	padding:220px 5px 20px 5px;
 	text-align:center;
 }
+#tiny-faces {
+	list-style:none;
+	margin:5px 0;
+	padding:0;
+	float:right;
+	clear:both;
+	}
+	#tiny-faces li {
+		float:left;
+		height:22px;
+		margin:0 2px;
+		overflow:visible;
+		}
+	#tiny-faces li img {
+		height:22px;
+		width:22px;	
+		border:1px solid #e1e1e1;	
+	}
+#the-grid .the-meta {
+	position:absolute;
+	right:0;
+	top:8px;
+}
+	#the-grid p.updated-at, #the-grid p.comment-count {
+		color:#999999;
+		margin:0;
+		font-size:9px;
+		line-height:15px;
+	}
+	#the-grid p.updated-at {
+		float:left;
+		
+	} 
+	#the-grid p.comment-count {
+		float:right;		
+	}
+	
+	

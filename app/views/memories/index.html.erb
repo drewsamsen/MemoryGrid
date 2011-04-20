@@ -25,17 +25,23 @@
       <li onclick="document.location.href='/<%= memory.id %>'">
       	<%= image_tag("http://graph.facebook.com/#{memory.author_fb_id}/picture", :class => "author_pic") unless memory.author_fb_id.blank? %>
         <p class="mem"><a href="/<%= memory.id %>"><%= truncate(memory.body, :length => 110) %></a></p>
-        <p class="updated-at"><%= time_ago_in_words(memory.updated_at) %> ago</p>  
-		  <p class="meta">
-          	<% memory.users.each do |user| %>
-				<% unless memory.user_is_owner?(user) %>				
-				<%= image_tag("http://graph.facebook.com/#{user.fb_user_id}/picture", :class => "tagged-user-pic") %>
-				<% end %>
-			<% end %>
-          	<span class="author">Posted by: <%= memory.author_name %></span>        	
-            <span class="user-count"><%= memory.users.size %></span>
-            <span class="comment-count"><%= memory.comments.size %></span>
-          </p>
+        
+		<div class="the-meta">
+		<p class="updated-at"><%= time_ago_in_words(memory.updated_at) %> ago | <%= pluralize(memory.comments.size, 'comment')%></p>  
+				
+		<ul id="tiny-faces">
+		<% memory.users.each do |user| %> 
+			<% unless user.fb_user_id == memory.author_fb_id %>           
+            <li>
+                <%= image_tag "http://graph.facebook.com/#{user.fb_user_id}/picture" %>       
+            </li>
+			<% end %>			
+		<% end %>
+        </ul>
+		
+				
+		</div>		
+		  
 		<% unless memory.has_user_commented?(current_user) %>
 			<p class="incomplete">
 				<span>What do <span class="underline">you</span> remember about this memory? Click through to contribute.</span>
